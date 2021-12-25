@@ -12,8 +12,8 @@ print("lamo")
 
 
 require('my-plugins')
-require('my-telescope')
-require('my-options')
-require('my-keybinds')
+require('lua.my-telescope')
+require('lua.my-options')
+require('lua.my-keybinds')
 
 print(44)
