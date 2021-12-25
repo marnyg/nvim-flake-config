@@ -30,7 +30,7 @@ nix flake init
 
 For a file to be included in the nix store, it need to be added to the git repo, it does not need to be committed, but you will need to run `git add file` in neovims case it would be `git add ./config/init.lua`. And this init file is what is read as a custom rc for the vim runtime in the flake.nix file;
 ``` nix
-		config = final.neovimUtils.makeNeovimConfig {
+	config = final.neovimUtils.makeNeovimConfig {
         customRC = builtins.readFile ./config/init.vim;
 ```
 
